@@ -1,0 +1,19 @@
+﻿@using _002.Collection.Models
+@model List<Game>
+<!doctype html>
+<html>
+<head>
+    <title>Games</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    @foreach (Game game in Model)
+    {
+        <h2>Game: @game.Name</h2>
+        <h2>Platform: @game.Platform</h2>
+        <h2>Engine: @game.Engine</h2>
+        <h2>@(new string('-', 30))</h2>
+    }
+</body>
+</html>
